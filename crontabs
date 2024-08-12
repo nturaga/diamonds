@@ -1,0 +1,16 @@
+# Crontab entries
+
+# Run a command at 9 AM every Friday
+0 9 * * 5 command_to_run
+
+# Run a command on the 1st and 15th of every month
+0 0 1,15 * * command_to_run
+
+# Run a command every 30 minutes on weekends (Saturday and Sunday)
+*/30 * * * 6,0 command_to_run
+
+# Run a command every 3 days at 10:23 AM
+23 10 */3 * * command_to_run
+
+# Run a command every hour from 9 AM to 5 PM on weekdays (Monday to Friday)
+0 9-17 * * 1-5 command_to_run
